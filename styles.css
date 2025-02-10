@@ -209,12 +209,14 @@ a {
 .hero-text {
   flex: 1;
   padding: 2rem;
+  animation: slideInLeft 1s ease-out forwards;
 }
 
 .hero-image {
   flex: 1;
   width: 100%;
   height: auto;
+  animation: slideInRight 1s ease-out forwards;
 }
 
 .hero-image img {
@@ -265,10 +267,32 @@ a {
   cursor: pointer;
 }
 
+@Keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@Keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* Food section */
 .food-section {
   padding: 5rem 0;
-  background: #a9a9a9;
+  background: #fff;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -282,7 +306,13 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   width: 300px;
   margin-bottom: 1.3rem;
+  animation: slideUpDown 2s ease-in-out infinite;
 }
+
+.food-card:nth-child(1) {animation-delay: 0s;}
+.food-card:nth-child(2) {animation-delay: 0.2s;}
+.food-card:nth-child(3) {animation-delay: 0.4s;}
+.food-card:nth-child(4) {animation-delay: 0.6s;}
 
 .food-card img {
   width: 100px;
@@ -328,6 +358,12 @@ a {
   background: #4e8b3a;
 }
 
+@Keyframes slideUpDown {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+}
+
 /* About section */
 .about-section {
   padding: 5rem 0;
@@ -356,27 +392,32 @@ a {
   gap: 1.3rem;
 }
 
-.about-icon {
+.about-card {
   text-align: center;
-  background: #a9a9a9;
+  background: #fff;
   width: 300px;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  transition: transform 0.3s ease;
 }
 
-.about-icon h3 {
+.about-card:hover {
+    transform: scale(1.05);
+}
+
+.about-card h3 {
   font-weight: bold;
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
-.about-icon p {
+.about-card p {
   text-align: center;
   margin-bottom: 1rem;
   padding: 1rem;
 }
 
-.about-icon img {
+.about-card img {
   width: 80px;
   height: 80px;
   margin: 1rem 0;
