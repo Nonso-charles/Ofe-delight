@@ -6,63 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofe Delight</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <nav class="navbar">
-      <div class="navbar-container">
-          <!-- Logo -->
-          <a href="#" class="logo">Ofe Delight</a>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="#" class="logo">Ofe Delight</a>
 
-          <!-- Toggle Button for Small Screens -->
-          <button class="navbar-toggle" aria-label="Open navigation menu">
-              <i class="fas fa-bars"></i>
-          </button>
+            <!-- Toggle Button for Small Screens -->
+            <button class="navbar-toggle" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
 
-          <!-- Full-Screen Overlay -->
-          <div class="overlay">
-              <!-- Close Button -->
-              <button class="close-btn" aria-label="Close navigation menu">
-                  <i class="fas fa-times"></i>
-              </button>
+            <!-- Full-Screen Overlay -->
+            <div class="overlay">
+                <!-- Close Button -->
+                <button class="close-btn" aria-label="Close navigation menu">
+                    <i class="fas fa-times"></i>
+                </button>
 
-              <!-- Nav Links for Small Screens -->
-              <ul class="nav-links">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Menu</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
+                <!-- Nav Links for Small Screens -->
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 
-              <!-- Search Bar for Small Screens -->
-              <div class="search-bar-sm">
-                  <input type="text" placeholder="Search..." aria-label="Search">
-                  <button aria-label="Search"><i class="fas fa-search"></i></button>
-              </div>
-          </div>
+                <!-- Search Bar for Small Screens -->
+                <div class="search-bar-sm">
+                    <input type="text" placeholder="Search..." aria-label="Search">
+                    <button aria-label="Search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
 
-          <!-- Nav Links for Large Screens -->
-          <ul class="nav-links-lg">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
+            <!-- Nav Links for Large Screens -->
+            <ul class="nav-links-lg">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
 
-          <!-- Icons for Large Screens -->
-          <div class="icons-lg">
-              <button class="search-icon" aria-label="Search">
-                  <i class="fas fa-search"></i>
-              </button>
-              <button class="shop-icon" aria-label="Shop">
-                  <i class="fas fa-shopping-cart"></i>
-              </button>
-          </div>
-      </div>
-  </nav>
+            <!-- Icons for Large Screens -->
+            <div class="icons-lg">
+                <button class="search-icon" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="shop-icon" aria-label="Shop">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
     <section class="hero">
         <div class="hero-container">
@@ -82,45 +82,76 @@
             </div>
         </div>
     </section>
-    
-    <section class="items">
-        <div class="items-container">
-                   <div class="item">
-                <img src="Afang.png" alt="">
-                <p>This is an excellent bowl of Afang Soup</p>
-                <div class="item-cta">
-                    <button class="price">₦6,000</button>
-                    <button class="buy-now">Buy Now</button>
-                </div>
-            </div>
-            
-                        <div class="item">
-                <img src="bitter-leaf.png" alt="">
-                <p>This is an excellent bowl of Bitter-Leaf Soup</p>
-                <div class="item-cta">
-                    <button class="price">₦8,000</button>
-                    <button class="buy-now">Buy Now</button>
-                </div>
-            </div>
-            
-                        <div class="item">
-                <img src="egwusi.png" alt="">
-                <p>This is an excellent bowl of Egwusi Soup</p>
-                <div class="item-cta">
-                    <button class="price">₦6,000</button>
-                    <button class="buy-now">Buy Now</button>
-                </div>
-            </div>
-            
-                        <div class="item">
-                <img src="okro.png" alt="">
-                <p>This is an excellent bowl of Okro Soup</p>
-                <div class="item-cta">
-                    <button class="price">₦6,000</button>
-                    <button class="buy-now">Buy Now</button>
-                </div>
+
+    <section class="food-section">
+        <div class="food-card">
+            <img src="okro.png" alt="">
+            <h3>Okro Soup</h3>
+            <p>This is an excellent Okro Soup that is very Healthy</p>
+            <div class="price-btn">
+                <span>₦6,000</span>
+                <button onclick="buyNow('Okro Soup', 6000)">Buy Now</button>
             </div>
         </div>
+
+        <div class="food-card">
+            <img src="egwusi.png" alt="">
+            <h3>Egusi Soup</h3>
+            <p>This is an excellent Egusi Soup that is very Healthy</p>
+            <div class="price-btn">
+                <span>₦7,000</span>
+                <button onclick="buyNow('Egusi Soup', 7000)">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="Afang.png" alt="">
+            <h3>Afang Soup</h3>
+            <p>This is an excellent Afang Soup that is very Healthy</p>
+            <div class="price-btn">
+                <span>₦8,000</span>
+                <button onclick="buyNow('Afang Soup', 8000)">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img src="bitter-leaf.png" alt="">
+            <h3>Bitter-Leaf Soup</h3>
+            <p>This is an excellent Bitter-Leaf Soup that is very Healthy</p>
+            <div class="price-btn">
+                <span>₦9,000</span>
+                <button onclick="buyNow('Bitter-Leaf Soup', 9000)">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-container">
+            <h2>WHY CHOOSE US?</h2>
+            <P>You will chose us cause you get the best quality food from us and we deliver fast.</P>
+        </div>
+
+        <div class="about-icons">
+            <div class="serve about-icon">
+                <img src="tray.png" alt="">
+                <h3>Serve Healthy Food</h3>
+                <p>We serve all healthy food here. You can choose any food you like.</p>
+            </div>
+
+            <div class="quality about-icon">
+                <img src="premium-badge.png" alt="">
+                <h3>Best Quality</h3>
+                <p>Our food quality is excellent. You will get exactly what you want here.</p>
+            </div>
+
+            <div class="delivery about-icon">
+                <img src="fast-delivery.png" alt="">
+                <h3>Fast Delivery</h3>
+                <p>You can say the main goal of our delivery man is to deliver orders quickly. You will recieve it
+                    shortly after ordering.</p>
+            </div>
+        </div>
+
     </section>
 
     <script src="script.js"></script>

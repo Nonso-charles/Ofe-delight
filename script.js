@@ -31,3 +31,21 @@
       shopIcon?.addEventListener('click', () => {
           alert('Shop functionality will be implemented here.');
       });
+
+
+      // Initialize cart variables
+      let cartQuantity = 0;
+      let cartTotal = 0;
+
+      function buyNow(item, price) {
+        // Update cart variables
+        cartQuantity++;
+        cartTotal += price;
+
+        // Update cart UI
+        document.getElementById("cart-quantity").innerText = cartQuantity;
+        document.getElementById("cart-total").innerText = cartTotal.toFixed(2);
+
+        // Optionally, show an alert confirming the action
+        alert(`You have added ${item} for ₦${price.toFixed(2)} to your cart.`);
+      } 
