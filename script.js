@@ -49,3 +49,30 @@
         // Optionally, show an alert confirming the action
         alert(`You have added ${item} for ₦${price.toFixed(2)} to your cart.`);
       } 
+      
+      
+      // Swiper
+              const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    autoplay: false,
+                    spaceBetween: 30,
+                },
+                320: {
+                    slidesPerView: 'auto',
+                    centeredSlides: true,
+                    spaceBetween: 10,
+                }
+            }
+        });
