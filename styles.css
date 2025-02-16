@@ -492,7 +492,7 @@ a {
     margin: 10px 0;
 }
 
-.price {
+.price-container {
     font-size: 20px;
     color: #e67e22;
     font-weight: bold;
@@ -525,6 +525,312 @@ a {
     bottom: 0;
     right: 0;
 }
+
+/* Regular Menu */
+  .regular-food {
+      padding: 4rem 0;
+  }
+
+    .section-title {
+        text-align: center;
+        margin: 1rem 0;
+        color: #2c3e50;
+        font-size: 2.5rem;
+    }
+    
+    .sub-title {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    /* Cards Container */
+    .soups-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Nigerian Soup Card */
+    .soup-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .soup-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .soup-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .soup-content {
+        padding: 20px;
+    }
+
+    .soup-title {
+        color: #e67e22;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+    }
+
+    .soup-rating {
+        color: #f1c40f;
+        margin: 10px 0;
+    }
+
+    .soup-description {
+        color: #7f8c8d;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .soup-price {
+        font-size: 1.3rem;
+        color: #27ae60;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .buy-btn {
+        background: #27ae60;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        width: 100%;
+        transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+        background: #219a52;
+    }
+
+    /* Cart Styles */
+    .cart {
+        position: static;
+        top: 20px;
+        right: 20px;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        min-width: 300px;
+        z-index: 1000;
+    }
+
+  .chefs-section {
+            padding: 4rem 2rem;
+            background: #fff;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .section-subtitle {
+            color: #7f8c8d;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Chefs Grid */
+        .chefs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Chef Card */
+        .chef-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .chef-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .chef-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 3px solid #e67e22;
+        }
+
+        .chef-info {
+            padding: 1.5rem;
+        }
+
+        .chef-name {
+            color: #2c3e50;
+            margin: 0.5rem 0;
+            font-size: 1.4rem;
+        }
+
+        .chef-role {
+            color: #e67e22;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .chef-bio {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        .chef-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        .social-icon {
+            color: #7f8c8d;
+            transition: color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #e67e22;
+        }
+        
+      /* Footer Styles */
+  .footer {
+      background: #003300;
+      color: white;
+      padding: 40px 20px;
+      font-family: 'Arial', sans-serif;
+  }
+
+  .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+  }
+
+  .footer-column h4 {
+      color: #e67e22;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+  }
+
+  .footer-links {
+      list-style: none;
+      padding: 0;
+  }
+
+  .footer-links li {
+      margin-bottom: 10px;
+  }
+
+  .footer-links a {
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+      color: #e67e22;
+  }
+
+  .newsletter-form {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+  }
+
+  .newsletter-input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+  }
+
+  .subscribe-btn {
+      background: #e67e22;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  }
+
+  .subscribe-btn:hover {
+      background: #d35400;
+  }
+
+  .contact-info {
+      margin-top: 20px;
+  }
+
+  .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #34495e;
+      margin-top: 30px;
+  }
+  
+     /* Back to Top button styling */
+        .back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: none;
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: #e67e22;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background-color: #ff6b81;
+            transform: scale(1.1);
+        }
+
+        .back-to-top img {
+            width: 40px;
+        }
+
+        /* Show the button when scrolled */
+        .show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
 
 /* Responsive Styles */
@@ -575,7 +881,25 @@ a {
         font-size: 18px;
         padding: 0 1rem;
     }
+    
+        .soups-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .cart {
+                position: static;
+                margin-top: 30px;
+            }
+            
+            .chefs-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
+
+ .footer-grid {
+     grid-template-columns: repeat(2, 1fr);
+ }
+        }
+
 
 @media (min-width: 769px) {
     .overlay {
@@ -593,4 +917,19 @@ a {
     .icons-lg {
         display: flex;
     }
+    
+}
+
+@media (max-width: 480px) {
+         .soups-container {
+         grid-template-columns: 1fr;
+     }
+     
+        .chefs-grid {
+       grid-template-columns: 1fr;
+        }
+        
+     .footer-grid {
+      grid-template-columns: 1fr;
+  }
 }
